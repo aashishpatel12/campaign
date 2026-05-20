@@ -1,0 +1,16 @@
+# Task: Document Figma Design for Intricare Task
+
+## Checklist
+- [x] Zoom out and explore Figma canvas
+- [ ] Identify all frames/screens
+- [ ] Capture screenshots of each unique screen
+- [ ] Extract layout details (colors, typography, spacing)
+- [ ] Document form fields and button styles
+- [ ] Create detailed documentation for developer
+
+## Findings
+- Initial screen seen: "Select Workflow Mode" with Advanced and Standard options.
+- Zoom level is 50%. Hand tool is active.
+- There's a persistent "Sign up" banner at the bottom.
+- Frames identified (partial list from earlier): "Linear steps", "Selected campaign type (step 2)", "Step 1 of 2".
+- "Select Workflow Mode" seems to be a modal-like frame on top of something else.

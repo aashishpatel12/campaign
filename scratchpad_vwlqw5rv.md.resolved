@@ -1,0 +1,26 @@
+# Task: Capture Figma Design Screens
+
+## Plan
+- [x] Fit all frames to screen and take an initial screenshot.
+- [x] Navigate to node-id=1-4591, fit to screen, take screenshot, and describe.
+- [x] Navigate to node-id=1-2041, fit to screen, take screenshot, and describe.
+- [x] Fit all frames to screen and take an initial screenshot.
+- [x] Navigate to node-id=1-4591, fit to screen, take screenshot, and describe.
+- [x] Navigate to node-id=1-2041, fit to screen, take screenshot, and describe.
+- [x] Navigate to node-id=1-1637, fit to screen, take screenshot, and describe.
+- [x] Navigate to node-id=1-2221, fit to screen, take screenshot, and describe.
+- [x] Navigate to node-id=1-2136, fit to screen, take screenshot, and describe.
+- [x] Provide final summary of screenshots and descriptions.
+
+## Progress Tracking
+- Initial Fit-to-Screen: Completed. Screenshot: figma_fit_all_frames_1778697104412.png
+- Node 1-4591: Completed. Screenshot: node_1_4591_screenshot_1778697164665.png
+  - Description: Shows "Standard Workflow" with horizontal screens: Standard, Leads List, Target Audience, and Sequence. Standard frame has a modal/popup.
+- Node 1-2041: Completed. Screenshot: node_1_2041_screenshot_1778697201142.png
+  - Description: "Advance Campaign" -> "Define Target Audience" tab. Step 1: "Choose Import Method" with options (LinkedIn Search, Upload CSV, etc.). "Upload CSV File" is selected.
+- Node 1-1637: Completed. Screenshot: node_1_1637_screenshot_1778697257136.png
+  - Description: "Advance Campaign" -> "Define Target Audience" tab. "LinkedIn Search" method is selected. Shows "Paste LinkedIn Search URL" section.
+- Node 1-2221: Completed. Screenshot: node_1_2221_screenshot_1778697285558.png
+  - Description: "Advance Campaign" -> "Map Properties" step after "Upload CSV File". Shows field mapping interface.
+- Node 1-2136: Completed. Screenshot: node_1_2136_screenshot_1778697330369.png
+  - Description: "Advance Campaign" page. Shows "Define Target Audience" step where "Upload CSV file" is selected, possibly a summary or transition state.

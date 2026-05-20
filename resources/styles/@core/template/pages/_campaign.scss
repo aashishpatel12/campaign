@@ -1,0 +1,160 @@
+// ─── Timeline dots (Advanced workflow left-side) ───
+.step-timeline-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  &.active  { background-color: #3666EE; color: #fff; }
+  &.done    { background-color: #28C76F; color: #fff; }
+  &.pending { border: 2px solid #B1B1B1; color: #B1B1B1; }
+}
+.step-connector { width: 2px; min-height: 24px; background: #CFDAFE; margin: 0 auto; }
+
+// ─── Import method cards ───
+.import-card {
+  border: 1.5px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 16px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+  position: relative;
+  min-width: 160px;
+
+  .card-icon { color: #B1B1B1; margin-bottom: 8px; }
+  .card-title { font-size: 14px; font-weight: 600; color: #5E5873; }
+  .card-sub   { font-size: 12px; color: #9692A4; margin-top: 4px; }
+
+  &.selected {
+    border-color: #3666EE;
+    background: #F6F8FF;
+
+    .card-icon { color: #3666EE; }
+
+    .check-badge {
+      position: absolute;
+      top: 8px; right: 8px;
+      width: 20px; height: 20px;
+      background: #3666EE;
+      border-radius: 4px;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff;
+      font-size: 12px;
+    }
+  }
+}
+
+// ─── Gradient primary button ───
+.btn-gradient {
+  background: linear-gradient(135deg, #8BA6FF 0%, #3762EE 100%) !important;
+  color: #fff !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(54, 102, 238, 0.3);
+}
+
+// ─── Step badge pill (yellow "Step 1 of 2") ───
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  background: #FFF3CD;
+  color: #856404;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+// ─── Drag and drop upload area ───
+.csv-drop-area {
+  border: 2px dashed #3666EE;
+  border-radius: 8px;
+  background: #F6F8FF;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover { background: #CFDAFE; }
+
+  .upload-icon { color: #3666EE; font-size: 32px; margin-bottom: 12px; }
+  .upload-text { color: #5E5873; font-size: 14px; }
+  .upload-hint { color: #9692A4; font-size: 12px; margin-top: 4px; }
+}
+
+// ─── Sequence step rows ───
+.sequence-step-row {
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  padding: 16px;
+  background: #FFFFFF;
+  margin-bottom: 8px;
+
+  .step-title { font-size: 14px; font-weight: 600; color: #5E5873; }
+  .step-subtitle { font-size: 12px; color: #9692A4; }
+  .message-preview {
+    font-size: 13px;
+    color: #5E5873;
+    background: #F8F8F8;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 8px 0;
+  }
+}
+
+.add-step-row {
+  border: 1.5px dashed #CFDAFE;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  cursor: pointer;
+  color: #3666EE;
+  transition: background 0.2s;
+  &:hover { background: #F6F8FF; }
+}
+
+.end-of-campaign {
+  background: #3666EE;
+  color: #fff;
+  border-radius: 20px;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+// ─── Map properties table ───
+.map-table {
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .map-table-header {
+    background: #F6F6F6;
+    padding: 12px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5E5873;
+    border-bottom: 1px solid #E0E0E0;
+  }
+
+  .map-table-row {
+    padding: 10px 16px;
+    border-bottom: 1px solid #F0F0F0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    &:last-child { border-bottom: none; }
+  }
+}
+
+// ─── Breadcrumb ───
+.page-breadcrumb {
+  a { color: #3666EE !important; text-decoration: none; }
+  .divider { color: #9692A4; margin: 0 6px; }
+  .current { color: #5E5873; }
+}
