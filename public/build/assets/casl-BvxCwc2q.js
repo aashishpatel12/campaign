@@ -1,0 +1,1 @@
+import{$ as o}from"./main-g5Eludp_.js";const r=(n,a)=>{const c=o();return c?c.proxy&&"$can"in c.proxy?c.proxy?.$can(n,a):!0:!1},e=n=>{const a=n.children.some(c=>r(c.action,c.subject));return n.action&&n.subject?r(n.action,n.subject)&&a:a};export{r as a,e as c};

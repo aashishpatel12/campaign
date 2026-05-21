@@ -1,0 +1,1 @@
+import{a8 as i,Z as o,J as l}from"./main-g5Eludp_.js";const c=(e,t,n,u,s=!1)=>{const a=i(),{global:r}=o();return l(()=>r.name.value==="light"?a.skin==="bordered"&&s?n:e:r.name.value==="dark"?a.skin==="bordered"&&s?u:t:e)},k="/build/assets/misc-mask-dark-D4eSvDKH.png",f="/build/assets/misc-mask-light-7GUBPWb3.png";export{k as a,f as b,c as u};
