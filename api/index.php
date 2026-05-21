@@ -30,8 +30,30 @@ require __DIR__.'/../vendor/autoload.php';
 // Bootstrap Laravel
 $app = require_once __DIR__.'/../bootstrap/app.php';
 
+// --- VERCEL SPECIFIC FIXES ---
+// Ensure the public path is correct so Vite find the manifest
+$app->bind('path.public', function() {
+    return __DIR__ . '/../public';
+});
+
 // Redirect storage to /tmp (Vercel filesystem is read-only)
 $app->useStoragePath('/tmp/storage');
+
+// Create the necessary temporary directories and subdirectories
+$paths = [
+    '/tmp/storage/framework/cache/data',
+    '/tmp/storage/framework/views',
+    '/tmp/storage/framework/sessions',
+    '/tmp/storage/logs',
+    '/tmp/bootstrap/cache'
+];
+
+foreach ($paths as $path) {
+    if (!is_dir($path)) {
+        @mkdir($path, 0777, true);
+    }
+}
+// -----------------------------
 
 // Handle request
 $app->handleRequest(Illuminate\Http\Request::capture());
