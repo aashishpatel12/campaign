@@ -25,6 +25,8 @@
         }
     ],
     "env": {
+        "APP_KEY": "base64:TMuaOF1wC8f3pBzXivMSRanxL05SC1PS6eKnNucFMxs=",
+        "APP_URL": "https://campaign-mocha.vercel.app",
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_CONFIG_CACHE": "/tmp/bootstrap/cache/config.php",
